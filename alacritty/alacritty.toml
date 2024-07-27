@@ -1,0 +1,17 @@
+import = ["/Users/colbura/themes/dracula.toml"]
+
+[window]
+padding = { x = 4, y = 4 }
+dynamic_padding = true
+dynamic_title = true
+startup_mode = "Fullscreen"
+decorations_theme_variant = "Dark"
+opacity = 1.0
+option_as_alt = "Both"
+
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+size = 15.0
+

@@ -1,0 +1,35 @@
+layout {
+    pane split_direction="vertical"{
+        pane {
+            cwd "~/synthesis/simulation/SyntheSimJava/"
+            command "nvim"
+            args "src/main/java/com/autodesk/synthesis/"
+            focus true
+        }
+        pane {
+            cwd "~/synthesis/fission/src/systems/simulation"
+            command "nvim"
+            args "."
+        }
+    }
+    pane split_direction="vertical" {
+        pane {
+            cwd "~/synthesis/simulation/samples/JavaSample/src/main/java/frc/robot/"
+            command "nvim"
+            args "."
+        }
+        pane split_direction="horizontal" {
+            pane {
+                cwd "~/synthesis/fission"
+                command "bun"
+                args "run" "dev"
+
+            }
+            pane {
+                cwd "~/synthesis/simulation/samples/JavaSample/"
+                command "./gradlew"
+                args "simulateJava"
+            }
+        }
+    }
+}
