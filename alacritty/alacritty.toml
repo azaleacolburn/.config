@@ -1,4 +1,4 @@
-import = ["/Users/colbura/themes/dracula.toml"]
+import = ["/Users/azaleacolburn/.config/alacritty/dracula.toml"]
 
 [window]
 padding = { x = 4, y = 4 }
