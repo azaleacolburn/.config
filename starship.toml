@@ -32,6 +32,9 @@ disabled = true
 [c]
 disabled = true
 
+[dotnet]
+disabled = true
+
 [haskell]
 disabled = true
 
