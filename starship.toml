@@ -38,6 +38,9 @@ disabled = true
 [haskell]
 disabled = true
 
+[lua]
+disabled = true
+
 [nodejs]
 disabled = true
 
