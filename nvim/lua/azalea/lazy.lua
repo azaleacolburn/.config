@@ -39,6 +39,9 @@ vim.opt.swapfile = false
 vim.wo.relativenumber = true
 vim.wo.number = true
 
+-- Set conceal level for obsidian plugin
+vim.wo.conceallevel = 1
+
 -- Offwhite line numbers
 vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#c7c9d6" })
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#c7c9d6" })
@@ -56,10 +59,10 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 -- Stray Keymaps
 local opts = { noremap = true, silent = true }
-vim.keymap.set("n", "l", "b", opts)
-vim.keymap.set("n", "L", "B", opts)
-vim.keymap.set("n", "b", "l", opts)
-vim.keymap.set("n", "B", "L", opts)
+vim.keymap.set({ "n", "v" }, "l", "b", opts)
+vim.keymap.set({ "n", "v" }, "L", "B", opts)
+vim.keymap.set({ "n", "v" }, "b", "l", opts)
+vim.keymap.set({ "n", "v" }, "B", "L", opts)
 
 vim.keymap.set("n", "<leader>o", "<C-o>", opts)
 vim.keymap.set("n", "<leader>e", ":Explore<cr>", opts)
