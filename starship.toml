@@ -32,6 +32,9 @@ disabled = true
 [c]
 disabled = true
 
+[docker_context]
+disabled = true
+
 [dotnet]
 disabled = true
 
