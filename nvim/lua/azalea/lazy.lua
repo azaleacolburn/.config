@@ -74,7 +74,6 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		-- Check if the current buffer is for a Git commit message
 		local bufname = vim.fn.expand("%:t")
 		if vim.bo.filetype ~= "gitcommit" and bufname == "" then
-			-- Open Telescope only if it's not a git commit message buffer
 			require("telescope.builtin").find_files()
 		end
 	end,
