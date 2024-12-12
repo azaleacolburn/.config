@@ -66,3 +66,14 @@ vim.keymap.set({ "n", "v" }, "B", "L", opts)
 
 vim.keymap.set("n", "<leader>o", "<C-o>", opts)
 vim.keymap.set("n", "<leader>e", ":Explore<cr>", opts)
+
+vim.api.nvim_create_autocmd("VimEnter", {
+	callback = function()
+		-- Check if the current buffer is for a Git commit message
+		local bufname = vim.fn.expand("%:t")
+		if vim.bo.filetype ~= "gitcommit" and bufname == "" then
+			-- Open Telescope only if it's not a git commit message buffer
+			require("telescope.builtin").find_files()
+		end
+	end,
+})

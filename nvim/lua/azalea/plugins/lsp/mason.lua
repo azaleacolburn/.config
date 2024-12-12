@@ -37,7 +37,7 @@ return {
 				"emmet_language_server",
 				"basedpyright",
 				"rust_analyzer",
-				"jdtls",
+				"marksman",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
