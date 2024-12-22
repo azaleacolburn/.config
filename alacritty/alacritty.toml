@@ -1,4 +1,3 @@
-import = [ "~/.config/alacritty/dracula.toml" ]
 
 [window]
 padding = { x = 4, y = 4 }
@@ -15,4 +14,7 @@ normal = { family = "Hack Nerd Font", style = "Regular" }
 italic = { family = "Hack Nerd Font", style = "Italic" }
 bold = { family = "Hack Nerd Font", style = "Bold" }
 size = 15.0
+
+[general]
+import = [ "~/.config/alacritty/dracula.toml" ]
 
