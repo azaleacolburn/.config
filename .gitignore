@@ -1,3 +1,7 @@
 *.log
 systemd/
 gh/
+Slack/
+dconf/
+session/
+pulse/

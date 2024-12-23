@@ -12,6 +12,7 @@ alias push="git push"
 alias pull="git pull"
 alias fetch="git fetch"
 alias checkout="git checkout"
+alias switch="git switch"
 
 # Neovim Aliases
 alias e="nvim"
